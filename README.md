@@ -1,4 +1,4 @@
-# Real-time Emotion Detection System
+# Real-time Emotion Detection System (Brahim Ezzaki & Omar El Alami)
 
 This project demonstrates a real-time emotion detection pipeline using modern data engineering tools. Let's break down how it works and why each component is important.
 
