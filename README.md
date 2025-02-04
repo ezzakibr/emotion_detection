@@ -70,46 +70,46 @@ This helps us understand the patterns and trends in the emotion detection data.
 ## Installation & Setup
 - Step 1 : Start Zookeeper
 Terminal 1 :
-  ```bash
+```bash
 /opt/kafka/bin/zookeeper-server-start.sh /opt/kafka/config/zookeeper.properties
 ```
 - Step 2 : Start Kafka
 Terminal 2 :
- ```bash
+```bash
 /opt/kafka/bin/kafka-server-start.sh /opt/kafka/config/server.properties
 ```
 - Step 3 : Create Kafka Topic 
 Terminal 3 :
- ```bash
+```bash
 /opt/kafka/bin/kafka-topics.sh --create --topic face-emotions --bootstrap-server localhost:9092 --partitions 1 --replication-factor 1
 ```
 - Step 4: Start Cassandra
 Terminal 4 :
- ```bash
+```bash
 sudo service cassandra start
 ```
 - Step 5 : Create Cassandra Table 
- ```bash
+```bash
 cqlsh -f cassandra_schema.cql
 ```
 - Step 5 : Create Cassandra Table
- ```bash
+```bash
 cqlsh -f cassandra_schema.cql
 ```
 - Step 6 : Launch Components
 **Emotion detector and Kafka Producer**
 Terminal 5 :
- ```bash
+```bash
 python3 emotion_detector.py
 ```
 **Start Spark Consumer**
 Terminal 5 :
- ```bash
+```bash
 spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.0.0 spark_consumer.py
 ```
 **Start Dashboard**
 Terminal 6 :
- ```bash
+```bash
 streamlit run dashboard.py
 ```
 
