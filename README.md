@@ -97,7 +97,7 @@ cqlsh -f cassandra_schema.cql
 cqlsh -f cassandra_schema.cql
 ```
 - Step 6 : Launch Components
-**Emotion detector and Kafka Producer**
+- **Emotion detector and Kafka Producer**
 Terminal 5 :
 ```bash
 python3 emotion_detector.py
