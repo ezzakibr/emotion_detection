@@ -57,6 +57,7 @@ The dashboard brings all this data to life by showing:
 - Real-time statistics about detections
 
 This helps us understand the patterns and trends in the emotion detection data.
+![Dashboard Screenshot](dashboard_emotion_detection.jpg)
 
 
 
